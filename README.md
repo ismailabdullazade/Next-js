@@ -26,3 +26,36 @@ Data Fetching
 1. Server Side Rendering (SSR) cache:no
 2. Static Side Generation (SSG) default 
 3. Incremental Static Generation(ISG)
+
+We can define Metadata in two ways: Static and Dynamic
+1 Static Metada 
+export const metadata = {
+  title:"Home",
+}
+Output => <head> <title>My unique product"</title></head>
+2 Dynamic Metada 
+export async function generateMetaData({params,searchParams}){
+  const product = await getProduct(params.id);
+  return { title:product.title }
+  Output => <head> <title>My unique product"</title></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
