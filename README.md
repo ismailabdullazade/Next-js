@@ -38,6 +38,7 @@ export async function generateMetaData({params,searchParams}){
   const product = await getProduct(params.id);
   return { title:product.title }
   Output => <head> <title>My unique product"</title></head>
+Never use redirect on button click, preferred useRouter
 
 
 
